@@ -32,7 +32,7 @@ Puis on ajoute un **.map()** :
 
 Enfin, on va dans le *template MovieCards.js* pour modifier le chemin de l'image et ne garder que **${this._movie.picture}**
 
-On procède de la même manière avec *Movie.js*, on crée la **class Movie**, on crée le constructor, puis les geters avec 2 spécificités pour title et duration :
+On procède de la même manière avec *Movie.js*, on crée la **class Movie**, on crée le constructor, puis les geters avec 2 spécificités pour **title** et **duration** :
 ```
 // on crée une ternaire pour choisir le titre français s'il existe, sinon on affiche le titre anglais 
     get title() {
@@ -47,11 +47,11 @@ On procède de la même manière avec *Movie.js*, on crée la **class Movie**, o
     }
 ```
 
-On importe le script dans index.html : 
+On importe le **script** dans *index.html* : 
 ```
 <script src="/js/models/Movie.js"></script>
 ```
-Et on remplace OldMovie ici et dans App.js :
+Et on remplace **OldMovie** ici et dans *App.js* :
 ```
 this.moviesApi = new MovieApi('/data/new-movie-data.json')
     ...
